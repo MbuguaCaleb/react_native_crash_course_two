@@ -32,3 +32,26 @@ import { View, Text, StyleSheet } from 'react-native'
   (b)Justify content-Centers Elements in the Main Axis
 
 ```
+
+
+**EyeOpener**
+
+```
+
+TouchableOpacity and a Button are the Only Two React Native components with OnPress
+Even....
+
+If i want the ablity to detect a touch on anything else rather than a button i can 
+touchableOpacity.
+
+
+
+```
+
+
+**Notes By**
+```
+MbuguaCaleb.
+
+
+```

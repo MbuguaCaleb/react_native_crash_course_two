@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar'
 import { View, FlatList, StyleSheet, Text } from 'react-native'
+import { useState } from 'react'
 import CategoryItem from './src/components/CategoryItem'
 import Header from './src/components/Header'
 import Search from './src/components/Search'
 
 export default function App() {
+  const [term, setTerm] = useState('Burger')
+
   const commonCategories = [
     {
       name: 'Burger',
@@ -31,6 +34,7 @@ export default function App() {
       imageUrl: require('./src/assets/images/steak.png'),
     },
   ]
+
   return (
     <View style={styles.container}>
       <Header />
@@ -43,6 +47,8 @@ export default function App() {
               name={item.name}
               imageUrl={item.imageUrl}
               index={index}
+              active={item.name === term}
+              handlePress={() => setTerm(item.name)}
             />
           )
         }}
