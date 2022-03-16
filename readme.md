@@ -33,23 +33,29 @@ import { View, Text, StyleSheet } from 'react-native'
 
 ```
 
-
 **EyeOpener**
 
 ```
 
+(1)
 TouchableOpacity and a Button are the Only Two React Native components with OnPress
 Even....
 
-If i want the ablity to detect a touch on anything else rather than a button i can 
+If i want the ablity to detect a touch on anything else rather than a button i can
 touchableOpacity.
+
+(2)
+
+I can be able to pass setState as a Prop and pass it to a child
+component 
+
 
 
 
 ```
 
-
 **Notes By**
+
 ```
 MbuguaCaleb.
 
